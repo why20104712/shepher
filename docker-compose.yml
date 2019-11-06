@@ -1,6 +1,6 @@
 version: '2'
 services:
-  db: 
+  db:
     image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -10,15 +10,15 @@ services:
     build: ./
     image: shepher
     ports:
-       - "8089:8089"
+      - "8089:8089"
     depends_on:
-       - db
-       - zookeeper
+      - db
+      - zookeeper
     links:
-       - db
+      - db
   zookeeper:
     image: zookeeper
     expose:
-       - 2181
-       - 2888
-       - 3888
+      - 2181
+      - 2888
+      - 3888

@@ -17,7 +17,7 @@
 package com.xiaomi.shepher;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 /**
  * Created by zhangpeng on 16-11-15.
